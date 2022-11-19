@@ -1,0 +1,76 @@
+@font-face {
+  font-family: DancingScript;
+  src: url(../Dancing_Script/static/DancingScript-Bold.ttf);
+}
+*{
+  padding:0;
+  margin: 0;
+}
+.background{
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(../img/5.jpg);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ /* background-image: url(/img/1.jpg);*/
+}
+a{
+  text-decoration: none;
+}
+.loichuc{
+  font-family: DancingScript;
+  width: 90%;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:  translate(-50%, -50%);
+  text-align: center;
+  padding: 0 10px 10px;
+  color: #333;
+  font-size: 50px;
+  display: block;
+}
+
+.button {
+display: flex;
+height: 70px;
+  margin-left: 92%;
+background: transparent;
+border:none;
+outline: none;
+border-radius: 5px;
+overflow: hidden;
+font-family: "Quicksand", sans-serif;
+font-size: 16px;
+cursor: pointer;
+  border-radius: 150px;
+  align-items: center;
+}
+
+.button:hover, .button__icon:hover {
+background:#ffff;
+  color: #65FFFE;
+
+  }
+
+
+.button:active {
+background: #65FFFE;
+}
+
+.button__icon {
+display: inline-flex;
+align-items: center;
+padding: 30px 10px;
+color: #00CCFE;
+height: 100%;
+}
+
+.button__icon {
+font-size: 3em;
+background: transparent;
+}

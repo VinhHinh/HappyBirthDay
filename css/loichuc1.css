@@ -1,6 +1,6 @@
 @font-face {
     font-family: DancingScript;
-    src: url(Dancing_Script/static/DancingScript-Bold.ttf);
+    src: url(../Dancing_Script/static/DancingScript-Bold.ttf);
 }
 *{
     padding:0;

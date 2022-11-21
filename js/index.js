@@ -7,7 +7,7 @@ function closePopup() {
     popup.classList.remove("open-popup")
 }
 function playaudio(){
-   var a = new Audio("video-1659118097.mp3");
+   var a = new Audio("video-7.mp3"
    a.play();
    a.loop=true;
 }

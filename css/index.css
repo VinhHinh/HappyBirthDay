@@ -28,6 +28,10 @@
 a{
     text-decoration: none;
 }
+h2{
+    font-size: large;
+    color:orangered;
+}
 .popup{
     width: 500px;
     background-color: #fff;

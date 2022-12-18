@@ -1,5 +1,5 @@
 let popup = document.getElementById("popup");
-var back = document.getElementsById("back");
+let back = document.getElementById("back");
 let audio = document.getElementById("audio");
 function openPopup() {
     popup.classList.add("open-popup")
@@ -8,7 +8,7 @@ function closePopup() {
     popup.classList.remove("open-popup")
 }
 function playaudio(){
-   var a = new Audio("DoraemonSonvvvgHappyBirthdayDoraemon.mp3");
+   var a = new Audio("DoraemonSongHappyBirthdayDoraemon.mp3");
    a.loop=true;
    a.play();
 }

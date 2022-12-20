@@ -8,7 +8,7 @@ function closePopup() {
     popup.classList.remove("open-popup")
 }
 function playaudio(){
-   var a = new Audio("DoraemonSongHappytBirthdayDoraemon.mp3");
+   var a = new Audio("DoraemonSongHappyBirthdayDoraemon.mp3");
    a.loop=true;
    a.play();
 }

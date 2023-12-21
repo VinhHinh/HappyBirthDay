@@ -52,3 +52,18 @@ function DoIt(target)
   $('#count').html($.global.item+1);
     
   }
+
+    function generateConfetti() {
+      const confettiContainer = document.querySelector('.confetti-container');
+
+      for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.animationDuration = `${Math.random() * 2 + 1}s`;
+        confetti.style.animationDelay = `${Math.random()}s`;
+
+        confettiContainer.appendChild(confetti);
+      }
+    }
+

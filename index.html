@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc Mừng Sinh Nhật!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #17EAD9, #6078EA);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    #birthday-card {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      font-size: 18px;
+    }
+
+    #confetti {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #e44d26;
+      border-radius: 50%;
+      animation: confetti-fall linear infinite;
+    }
+	.button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #2980b9;
+    }
+
+    .birthday-image {
+      width: 100%;
+      max-height: 300px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="birthday-card">
+    <h1>Chúc Mừng Sinh Nhật!</h1>
+    <p>Chúc mừng sinh nhật bé Linh! Chúc bé Linh có một ngày thật ý nghĩa và hạnh phúc!</p></br>
+	<p>Chúc mừng bé bước sang tuổi mới, lời đầu tiên anh chúc bé luôn bình an, mạnh khoẻ và hạnh phúc.</p></br>
+    <p>Những ước mơ hoài bão của bé thành hiện thực nè 😘</p></br>
+    <p>Những điều tốt đẹp an lành đến với em, việc học tập thuận lợi, thi thì không sợ luôn, cuối kỳ đạt loại giỏi, deadline hông dí, hông bị ngải heo dí😂</p></br>
+    <img src="path_to_your_image.jpg" alt="Birthday Image" class="birthday-image"></br>
+	<a href="path_to_your_file_on_system" class="button-link">Mở File</a>
+  </div>
+	
+  </div>
+
+  <div id="confetti"></div>
+
+  <audio id="birthday-song" autoplay loop>
+    <source src="path_to_your_birthday_song.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <script>
+    function generateConfetti() {
+      const confettiContainer = document.getElementById('confetti');
+
+      for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.animationDuration = `${Math.random() * 2 + 1}s`;
+        confetti.style.animationDelay = `${Math.random()}s`;
+
+        confettiContainer.appendChild(confetti);
+      }
+    }
+
+    generateConfetti();
+  </script>
+</body>
+</html>
